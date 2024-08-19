@@ -1,0 +1,562 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+
+.section1{
+    width: 100%;
+    height: 100svh;
+    background-image: url(photo/background.webp);
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 180px;
+}
+.section1 .me{
+    width: 100%;
+    height: 78%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.section1 .me h1{
+    font-size: 50px;
+    color:rgb(223, 223, 0);
+}
+.section1 .me h3{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.section1 .me h4{
+    color: #fff;
+    font-size: 30px;
+}
+.section1 .me .sothial{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.section1 .me .sothial a{
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(255, 255, 255);
+    margin: 10px;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+.section1 .me .sothial a i{
+    font-size: 25px;
+    color: #fff;
+}
+.section1 .me .sothial a:nth-child(1):hover{
+    background-color: blue;
+    border: none;
+    transform: rotate(360deg);
+}
+.section1 .me .sothial a:nth-child(2):hover{
+    background-color:rgb(56, 56, 56);
+    border: none;
+    transform: rotate(360deg);
+}
+.section1 .me .sothial a:nth-child(3):hover{
+    background-color:green;
+    border: none;
+    transform: rotate(360deg);
+}
+.section1 .me .sothial a:nth-child(4):hover{
+    background-color:rgb(204, 0, 255);
+    border: none;
+    transform: rotate(360deg);
+}
+
+.nav{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1111;
+}
+.nav .logo{
+    width: 120px;
+}
+.nav .ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding-right: 100px;
+    
+}
+.nav .ul li{
+    margin: 0 30px;
+    
+}
+.nav .ul li a{
+    font-size: 20px;
+    color:#fff;
+    text-decoration: none;
+    position: relative;
+}
+.nav .ul li a::before{
+    position:absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    background-color: yellow;
+    width: 1px;
+    width: 0px;
+    opacity: 0.2;
+    height: 2px;
+    border: 1px solid yellow;
+    transition: all 0.5s ease-in-out;
+}
+.nav .ul li a:hover::before{
+    width: 100%;
+    opacity: 1;
+}
+.nav i{
+    color: wheat;
+    font-size: 25px;
+    margin: 0  10px 0 0;
+    display: none;
+}
+
+
+/*** section2***/
+.section2{
+    width: 100%;
+    height: 100svh;
+    background-image: url(photo/luxury-background-design-abstract-modern-style-gradients_343694-2512.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.section2 .photos{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns:repeat(3, auto);
+    gap: 5rem;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.section2 .photos .card{
+    width: 300px;
+    height: 180px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+    box-shadow:  5px 8px 50px black;
+}
+.section2 .photos a{
+    text-decoration: none;
+}
+.section2 .photos .card h1{
+    color:black;
+    text-transform: capitalize;
+
+}
+.section2 .photos .card:hover{
+    background: black;
+    animation: upup 0.9s ;
+}
+.section2 .photos .card:hover h1{
+    color: #fff;
+}
+
+@keyframes upup {
+    0%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}
+
+.section2 .photos button{
+    width: 100px;
+}
+
+
+/** secthon3*/
+
+.section3{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(photo/0b0266aa3f750eb120b72745ffa104b7.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.section3 .container{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    /* gap: 20px; */
+}
+.section3 .log img{
+    width: 400px;
+}
+.section3 .container .lang{
+    margin-top: 70px;
+}
+.section3 .container .lang h3{
+    color: #fff;
+    text-transform: capitalize;
+}
+.section3 .container .lang .box{
+    width: 350px;
+    height: 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+
+}
+.section3 .container .lang .box .b{
+    background-color: yellow;
+    height: 100%;
+    border-radius: 10px;
+    transition: all 0.9s ease;
+}
+
+/*****section4******/
+
+.section4{
+    width: 100%;
+    height: auto;
+    background-color: rgb(44, 43, 43);
+    padding: 50px 0 20px 0;
+}
+
+.section4 .container{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+.section4 .container .flo{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.section4 .container .flo h3{
+    font-size: 20px;
+    color: white;
+}
+.section4 .container .flo h2{
+    font-size: 15px;
+    color: yellow;
+}
+.section4 .container .flo .sothial {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section4 .container .flo .sothial a{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px; margin: 4px;
+    text-decoration: none;
+}
+.section4 .container .flo .sothial a i{
+    color: #fff;
+
+}
+.section4 .container .flo .sothial a:nth-child(1):hover{
+    background-color: blue;
+    border: none;
+}
+.section4 .container .flo .sothial a:nth-child(2):hover{
+    background-color:rgb(56, 56, 56);
+    border: none;
+}
+.section4 .container .flo .sothial a:nth-child(3):hover{
+    background-color:green;
+    border: none;
+}
+.section4 .container .flo .sothial a:nth-child(4):hover{
+    background-color:rgb(204, 0, 255);
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1040px) {
+    .section2 .photos{
+        grid-template-columns: repeat(2,auto);
+    }
+    .section4 .container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width:1000px){
+    .nav .ul{
+        position: fixed;
+        right: -1050px;
+        top: 100px;
+        width: 100%;
+        height: 250px;
+        background-color: black;
+        flex-direction: column;
+        transition: all 0.5s  ease;
+    }
+    .ul.active{
+        right: 0;
+        transition: all 0.5s  ease;
+    }
+    .nav i{
+        display: block;
+    }
+}
+@media (max-width:835px) {
+    .section3 .container{
+        grid-template-columns: repeat(1,auto);
+        align-items: center;
+        justify-content: center;
+    }
+    .section2 button{
+        width: 250px;
+        height: 50px;
+        margin-top: 100px;
+    }
+    .section3 .log img{
+        width: 550px;
+    }
+    .section3 .container .lang{
+        margin-top: 0px;
+    }
+    .section3 .container .lang .box{
+        width: 550px;
+        height: 25px;
+    }
+    .nav .logo{
+        width: 180px;
+        z-index: 11115;
+    }
+    .nav i{
+        margin-right: 50px;
+        font-size: 50px;
+    }
+    .section4 .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width:675px) {
+    .section2 .photos{
+        grid-template-columns: repeat(1,auto);
+    }
+    .section2 button{
+        margin-top: 10px;
+    }
+    .section1 .me h1{
+        margin-top: 50px;
+    }
+    .section1 .me h4{
+        margin-top: 50px;
+    }
+    .section1 .me h3{
+        margin-top: 50px;
+    }
+}
+@media (max-width:570px) {
+    .section1 .me h1{
+        margin-top: 50px;
+        font-size: 40px;
+    }
+    .section3 .log img{
+        width: 450px;
+    }
+    .section3 .container .lang{
+        margin-top: 0px;
+    }
+    .section3 .container .lang .box{
+        width: 450px;
+        height: 25px;
+    }
+    .section4 .container{
+        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+@media (max-width:480px) {
+    .nav .logo{
+        width: 140px;
+        z-index: 11115;
+    }
+    .nav i{
+        margin-right: 30px;
+        font-size: 25px;
+    }
+    .section1 .me h1{
+        margin-top: 50px;
+        text-align: center;
+        font-size: 35px;
+    }
+    .section3 .log img{
+        width: 350px;
+    }
+    .section3 .container .lang{
+        margin-top: 0px;
+    }
+    .section3 .container .lang .box{
+        width: 350px;
+        height: 25px;
+    }
+}
+@media (max-width:380px) {
+    .nav .logo{
+        width: 120px;
+        z-index: 11115;
+    }
+    .nav i{
+        margin-right: 30px;
+        font-size: 25px;
+    }
+    .section1 .me h1{
+        margin-top: 10px;
+        text-align: center;
+        font-size: 35px;
+    }
+    .section2 .photos .card{
+        width: 280px;
+        height: 150px;
+        margin: 0;
+        padding: 0;
+    }
+    .section2 .photos{
+        grid-template-columns: repeat(1,auto);
+        gap: 2rem;
+        margin-top: 0;
+        padding: 0;
+    }
+
+
+
+
+
+    .section3 .log img{
+        width: 280px;
+    }
+    .section3 .container .lang{
+        margin-top: 0px;
+    }
+    .section3 .container .lang .box{
+        width: 280px;
+        height: 15px;
+    }
+    .nav .ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 100px;
+    }
+}
+@media (max-width:500px) {
+    .nav .logo{
+        width: 100px;
+        z-index: 11115;
+    }
+    .nav i{
+        margin-right: 30px;
+        font-size: 25px;
+    }
+    .section1 .me h1{
+        margin-top: 10px;
+        text-align: center;
+        font-size: 50px;
+    }
+    .section2 .photos .card{
+        width: 280px;
+        height: 150px;
+        margin: 0;
+        padding: 0;
+    }
+    .section2 .photos{
+        grid-template-columns: repeat(1,auto);
+        gap: 2rem;
+        margin-top: 0;
+        padding: 0;
+    }
+
+
+
+
+
+    .section3 .log img{
+        width: 280px;
+    }
+    .section3 .container .lang{
+        margin-top: 0px;
+    }
+    .section3 .container .lang .box{
+        width: 280px;
+        height: 15px;
+    }
+    .nav .ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 100px;
+    }
+    .section4 .container{
+        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
